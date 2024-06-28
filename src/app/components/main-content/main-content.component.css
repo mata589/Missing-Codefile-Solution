@@ -1,0 +1,47 @@
+.main-content {
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 60px;
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  
+  .form-section {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #840a0a;
+    color: white;
+    padding: 10px 20px 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #840a0a;
+  }
+  

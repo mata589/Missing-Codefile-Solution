@@ -1,0 +1,17 @@
+
+<div class="send-codefile">
+  <h2>Code File Status</h2>
+  <div class="codefile-widget">
+    <div *ngIf="codeFileAvailable" class="codefile-status available">Code file is present.</div>
+    <div *ngIf="!codeFileAvailable" class="codefile-status unavailable">No code file available.</div>
+  </div>
+</div>
+
+<div class="form-section">
+  <label for="provider">Select Provider</label>
+  <select id="provider" [(ngModel)]="selectedProvider">
+    <option *ngFor="let provider of providers" [value]="provider">{{ provider }}</option>
+  </select>
+</div>
+    
+<button (click)="sendCodefile()">Send</button>

@@ -1,0 +1,26 @@
+<div class="main-content">
+    <h1>Member Information</h1>
+  
+    <div class="form-row">
+      <div class="form-section">
+        <label for="memberNumber">Enter Member Number</label>
+        <input type="text" id="memberNumber" placeholder="Enter member number">
+        <button (click)="submitMemberNumber()">Submit</button>
+      </div>
+  
+      <div class="form-section">
+        <label for="memberPlan">Member Plan</label>
+        <input type="text" id="memberPlan" placeholder="Member plan" readonly>
+      </div>
+    </div>
+    
+    <div class="form-section">
+      <label for="country">Select Country</label>
+      <select id="country" [(ngModel)]="selectedCountry">
+        <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
+      </select>
+    
+      <button [routerLink]="['/dashboard/send-codefile']" (click)="submitCountry()">Submit</button>
+    </div>
+  </div>
+  
