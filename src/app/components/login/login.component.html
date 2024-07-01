@@ -2,12 +2,12 @@
   <div class="left-login-container"></div>
   <div class="right-login-container">
     <div class="inner-right-login-container">
-      <h4 [style.color]="'#0F0E0E'">Login to your account</h4>
-      <p class="code-file-soln">Code file solution</p>
-      <div class="form-div">
+      <h2 [style.color]="'#0F0E0E'">Login</h2>
+       <div class="form-div">
         <form class="form">
+          <small>Email*</small>
           <mat-form-field class="email-field">
-            <mat-label>Email</mat-label>
+            <mat-label></mat-label>
             <input
               type="email"
               matInput
@@ -26,10 +26,11 @@
               ><small>Email <strong> required</strong></small></mat-error
             >
             } </mat-form-field
-          ><br />
+          >
 
+          <small>Password*</small>
           <mat-form-field class="password-field">
-            <mat-label>Password</mat-label>
+            <mat-label></mat-label>
             <input
               matInput
               [type]="hide ? 'password' : 'text'"
@@ -51,7 +52,7 @@
               ><small>Password <strong> required</strong></small></mat-error
             >
             } </mat-form-field
-          ><br />
+          >
 
           <div class="link-div">
             <div class="link-div-left">
@@ -67,7 +68,7 @@
             <a routerLink="" class="forgot-password-link"><small>Forgot password?</small></a>
           </div>
 
-          <button [routerLink]="['/auth/verify']" class="login-submit"><strong>Login</strong></button>
+          <button class="login-submit"><strong>Login</strong></button>
         </form>
       </div>
     </div>

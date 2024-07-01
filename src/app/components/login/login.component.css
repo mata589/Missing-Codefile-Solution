@@ -1,19 +1,19 @@
 .form {
-    width: 100%;
-  }
-  
+  width: 100%;
+}
+ 
 .email-field{
     width: 100%;
     margin-top: 2%;
+    margin-bottom: 2%;
+    height: 70px;
 }
 
 .password-field{
     width: 100%;
+    margin-top: 2%;
 }
-input {
-    height: 50px;
-}
-  
+
 .login-container{
 display: flex;
 margin: 2%;
@@ -33,19 +33,13 @@ margin: 10%;
 height: auto;
 }
 
-.code-file-soln{
-margin-left: 20%;
-font-size: 14px;
-color : #0F0E0E;
-}
-
 .form-div{
 margin-top: 2%;
-height: auto;
 }
 
 mat-error{
-    color: red;
+  color: red;
+
 }
 
 .login-submit{
@@ -119,6 +113,4 @@ color: #A1A1A1;
     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 29%, 78% 19%, 45% 62%);
   }
   
-  mat-form-field{
-    margin-top: 2%;
-  }
+ 
