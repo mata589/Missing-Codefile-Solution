@@ -6,12 +6,14 @@ import { MainContentComponent } from './components/main-content/main-content.com
 import { SendCodefileComponent } from './components/send-codefile/send-codefile.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { EmailalertComponent } from './components/emailalert/emailalert.component';
 
 
 export const routes: Routes = [
   { path: 'auth/login', component: LoginComponent },
   { path: 'auth/verify', component: TwofactorComponent },
-  { path: '', redirectTo: '/auth/login', pathMatch: 'full' }, // Redirect to login by default
+  { path: 'email-alert', component: EmailalertComponent },
+  { path: '', redirectTo: '/auth/login', pathMatch: 'full'}, // Redirect to login by default
   { 
     path: 'dashboard', 
     component: DashboardComponent,
